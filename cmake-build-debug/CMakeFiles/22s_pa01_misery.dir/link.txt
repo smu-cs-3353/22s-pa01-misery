@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/22s_pa01_misery.dir/main.cpp.o  -o 22s_pa01_misery 
+/usr/bin/c++  -g   CMakeFiles/22s_pa01_misery.dir/main.cpp.o CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.o  -o 22s_pa01_misery 

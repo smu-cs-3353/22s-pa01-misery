@@ -123,6 +123,33 @@ depend:
 	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/build
 .PHONY : 22s_pa01_misery/fast
 
+BruteForceAlgo.o: BruteForceAlgo.cpp.o
+
+.PHONY : BruteForceAlgo.o
+
+# target to build an object file
+BruteForceAlgo.cpp.o:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.o
+.PHONY : BruteForceAlgo.cpp.o
+
+BruteForceAlgo.i: BruteForceAlgo.cpp.i
+
+.PHONY : BruteForceAlgo.i
+
+# target to preprocess a source file
+BruteForceAlgo.cpp.i:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.i
+.PHONY : BruteForceAlgo.cpp.i
+
+BruteForceAlgo.s: BruteForceAlgo.cpp.s
+
+.PHONY : BruteForceAlgo.s
+
+# target to generate assembly for a file
+BruteForceAlgo.cpp.s:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.s
+.PHONY : BruteForceAlgo.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... 22s_pa01_misery"
+	@echo "... BruteForceAlgo.o"
+	@echo "... BruteForceAlgo.i"
+	@echo "... BruteForceAlgo.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

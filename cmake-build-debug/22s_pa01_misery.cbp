@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/BruteForceAlgo.cpp">
+			<Option target="22s_pa01_misery"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/BruteForceAlgo.h">
+			<Option target="22s_pa01_misery"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/main.cpp">
 			<Option target="22s_pa01_misery"/>
 		</Unit>
