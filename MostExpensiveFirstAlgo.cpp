@@ -5,7 +5,7 @@
 #include "MostExpensiveFirstAlgo.h"
 
 void MostExpensiveFirstAlgo::findOptimalPlacement(char** argv) {
-    cout << "NEXT: " << endl;
+    cout << endl << "SECOND: " << endl;
     ifstream input(argv[1]);
 
     int wallLength, wallHeight, numArtPieces;
@@ -16,25 +16,47 @@ void MostExpensiveFirstAlgo::findOptimalPlacement(char** argv) {
 
     for (int i = 0; i < numArtPieces; i++) {
         input >> pictureID >> pictureValue >> pictureWidth >> pictureHeight;
-        cout << pictureID << " " << pictureValue << " " << pictureWidth << " " << pictureHeight << endl;
 
         pictureIDs.push_back(pictureID);
         pictureValues.push_back(pictureValue);
         pictureWidths.push_back(pictureWidth);
         pictureHeights.push_back(pictureHeight);
     }
-    cout << endl;
 
     sortByMostExpensive(pictureIDs, pictureValues, pictureWidths, pictureHeights, 0, pictureValues.size() - 1);
 
-    for (int i = 0; i < pictureValues.size(); i++) {
-        cout << pictureIDs.at(i) << " " << pictureValues.at(i) << " " << pictureWidths.at(i) << " " << pictureHeights.at(i) << endl;
-    }
+    vector<vector<int>> theOptimalSolution = findOptimalPlacement(pictureIDs, pictureValues, pictureWidths, pictureHeights, wallLength);
 
+    cout << theOptimalSolution.at(theOptimalSolution.size() - 1).at(0) << endl;
+
+    for (int i = 0; i < theOptimalSolution.size() - 1; i++) {
+        vector<int> temp = theOptimalSolution.at(i);
+        for (int j = 0; j < temp.size(); j++) {
+            cout << temp.at(j) << " ";
+        }
+        cout << endl;
+    }
+    
 }
 
-vector<vector<int>> MostExpensiveFirstAlgo::findOptimalPlacement(vector<int>, vector<int>, vector<int>, vector<int>, int) {
-    //return vector<vector<int>>();
+vector<vector<int>> MostExpensiveFirstAlgo::findOptimalPlacement(vector<int> pictureIDs, vector<int> pictureValues, vector<int> pictureWidths, vector<int> pictureHeights, int wallLength) {
+    vector<vector<int>> theSolution;
+    int totalPrice = 0;
+    for (int i = pictureValues.size() - 1; i >= 0; i--) {
+        if (pictureWidths.at(i) <= wallLength) {
+            wallLength -= pictureWidths.at(i);
+
+            vector<int> temp = {pictureIDs.at(i), pictureValues.at(i), pictureWidths.at(i), pictureHeights.at(i)};
+            theSolution.push_back(temp);
+            totalPrice += pictureValues.at(i);
+        } else if (wallLength <= 0) {
+            break;
+        }
+    }
+    vector<int> temp = {totalPrice};
+    theSolution.push_back(temp);
+
+    return theSolution;
 }
 
 //The following sorting algorithm is a quick sort algorithm inspired by code found at: https://www.geeksforgeeks.org/quick-sort/
