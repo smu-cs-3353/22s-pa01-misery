@@ -150,6 +150,33 @@ BruteForceAlgo.cpp.s:
 	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.s
 .PHONY : BruteForceAlgo.cpp.s
 
+MostExpensiveFirstAlgo.o: MostExpensiveFirstAlgo.cpp.o
+
+.PHONY : MostExpensiveFirstAlgo.o
+
+# target to build an object file
+MostExpensiveFirstAlgo.cpp.o:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.o
+.PHONY : MostExpensiveFirstAlgo.cpp.o
+
+MostExpensiveFirstAlgo.i: MostExpensiveFirstAlgo.cpp.i
+
+.PHONY : MostExpensiveFirstAlgo.i
+
+# target to preprocess a source file
+MostExpensiveFirstAlgo.cpp.i:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.i
+.PHONY : MostExpensiveFirstAlgo.cpp.i
+
+MostExpensiveFirstAlgo.s: MostExpensiveFirstAlgo.cpp.s
+
+.PHONY : MostExpensiveFirstAlgo.s
+
+# target to generate assembly for a file
+MostExpensiveFirstAlgo.cpp.s:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.s
+.PHONY : MostExpensiveFirstAlgo.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -189,6 +216,9 @@ help:
 	@echo "... BruteForceAlgo.o"
 	@echo "... BruteForceAlgo.i"
 	@echo "... BruteForceAlgo.s"
+	@echo "... MostExpensiveFirstAlgo.o"
+	@echo "... MostExpensiveFirstAlgo.i"
+	@echo "... MostExpensiveFirstAlgo.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
