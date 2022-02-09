@@ -6,6 +6,7 @@
 #include <iostream>
 #include <fstream>
 #include "BruteForceAlgo.h"
+#include "MostExpensiveFirstAlgo.h"
 
 using namespace std;
 
@@ -13,4 +14,7 @@ using namespace std;
 int main(int argc, char** argv) {
     BruteForceAlgo firstAlgorithm;
     firstAlgorithm.findOptimalPlacement(argv);
+
+    MostExpensiveFirstAlgo secondAlgorithm;
+    secondAlgorithm.findOptimalPlacement(argv);
 }
