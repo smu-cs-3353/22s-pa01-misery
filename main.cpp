@@ -7,14 +7,18 @@
 #include <fstream>
 #include "BruteForceAlgo.h"
 #include "MostExpensiveFirstAlgo.h"
+#include "CustomAlgo.h"
 
 using namespace std;
 
 
 int main(int argc, char** argv) {
-    BruteForceAlgo firstAlgorithm;
-    firstAlgorithm.findOptimalPlacement(argv);
+//    BruteForceAlgo firstAlgorithm;
+//    firstAlgorithm.findOptimalPlacement(argv);
 
     MostExpensiveFirstAlgo secondAlgorithm;
     secondAlgorithm.findOptimalPlacement(argv);
+
+    CustomAlgo thirdAlgorithm;
+    thirdAlgorithm.findOptimalPlacement(argv);
 }
