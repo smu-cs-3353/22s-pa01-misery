@@ -5,7 +5,6 @@
 #include "MostExpensiveFirstAlgo.h"
 
 void MostExpensiveFirstAlgo::findOptimalPlacement(char** argv) {
-    cout << endl << "SECOND: " << endl;
     ifstream input(argv[1]);
 
     int wallLength, wallHeight, numArtPieces;
@@ -27,22 +26,30 @@ void MostExpensiveFirstAlgo::findOptimalPlacement(char** argv) {
 
     vector<vector<int>> theOptimalSolution = findOptimalPlacement(pictureIDs, pictureValues, pictureWidths, pictureHeights, wallLength);
 
-    cout << theOptimalSolution.at(theOptimalSolution.size() - 1).at(0) << endl;
+
+    string fileName = argv[1];
+    for (int i = 0; i < 4; i++) { //removes .txt from fileName
+        fileName.pop_back();
+    }
+    fileName += "-highvalue.txt";
+
+    ofstream output(fileName);
+
+    output << theOptimalSolution.at(theOptimalSolution.size() - 1).at(0) << endl;
 
     for (int i = 0; i < theOptimalSolution.size() - 1; i++) {
         vector<int> temp = theOptimalSolution.at(i);
         for (int j = 0; j < temp.size(); j++) {
-            cout << temp.at(j) << " ";
+            output << temp.at(j) << " ";
         }
-        cout << endl;
+        output << endl;
     }
-    
 }
 
 vector<vector<int>> MostExpensiveFirstAlgo::findOptimalPlacement(vector<int> pictureIDs, vector<int> pictureValues, vector<int> pictureWidths, vector<int> pictureHeights, int wallLength) {
     vector<vector<int>> theSolution;
     int totalPrice = 0;
-    for (int i = pictureValues.size() - 1; i >= 0; i--) {
+    for (int i = 0; i < pictureValues.size(); i++) {
         if (pictureWidths.at(i) <= wallLength) {
             wallLength -= pictureWidths.at(i);
 
@@ -74,7 +81,7 @@ int MostExpensiveFirstAlgo::partition(vector<int>& pictureIDs, vector<int>& pict
     int i = low - 1;
 
     for (int j = low; j <= high - 1; j++) {
-        if (pictureValues.at(j) < pivot) {
+        if (pictureValues.at(j) > pivot) {
             i++;
             swap(&pictureIDs.at(i), &pictureIDs.at(j));
             swap(&pictureValues.at(i), &pictureValues.at(j));
