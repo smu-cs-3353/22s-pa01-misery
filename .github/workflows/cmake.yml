@@ -12,9 +12,9 @@ env:
   #   add_executable command.
   TEST_EXE: 22s_pa01_misery
   # the name of any input files (use relative path)
-  #INPUT_FILE: 
+  INPUT_FILE: ../input/PictureInfo.txt
   # the name of any output files (use relative paths)
-  #OUTPUT_FILE: 
+  OUTPUT_FILE: ../input/PictureInfo-bruteforce.txt ../input/PictureInfo-custom.txt ../input/PictureInfo-highvalue.txt
 
 
 jobs:

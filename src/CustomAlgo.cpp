@@ -50,6 +50,8 @@ void CustomAlgo::findOptimalPlacement(char** argv) {
         output << endl;
     }
 
+    output.close();
+
 }
 
 bool CustomAlgo::findOptimalPlacement(vector<int> pictureIDs, vector<int> pictureValues, vector<int> pictureWidths, vector<int> pictureHeights, int wallLength, int start, vector<vector<int>>& theSolution, bool recursiveCall) {

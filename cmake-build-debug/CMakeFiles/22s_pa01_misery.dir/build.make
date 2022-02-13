@@ -57,72 +57,72 @@ include CMakeFiles/22s_pa01_misery.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/22s_pa01_misery.dir/flags.make
 
-CMakeFiles/22s_pa01_misery.dir/main.cpp.o: CMakeFiles/22s_pa01_misery.dir/flags.make
-CMakeFiles/22s_pa01_misery.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/22s_pa01_misery.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/22s_pa01_misery.dir/main.cpp.o -c "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/main.cpp"
+CMakeFiles/22s_pa01_misery.dir/src/main.cpp.o: CMakeFiles/22s_pa01_misery.dir/flags.make
+CMakeFiles/22s_pa01_misery.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/22s_pa01_misery.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/22s_pa01_misery.dir/src/main.cpp.o -c "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/main.cpp"
 
-CMakeFiles/22s_pa01_misery.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/22s_pa01_misery.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/main.cpp" > CMakeFiles/22s_pa01_misery.dir/main.cpp.i
+CMakeFiles/22s_pa01_misery.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/22s_pa01_misery.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/main.cpp" > CMakeFiles/22s_pa01_misery.dir/src/main.cpp.i
 
-CMakeFiles/22s_pa01_misery.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/22s_pa01_misery.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/main.cpp" -o CMakeFiles/22s_pa01_misery.dir/main.cpp.s
+CMakeFiles/22s_pa01_misery.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/22s_pa01_misery.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/main.cpp" -o CMakeFiles/22s_pa01_misery.dir/src/main.cpp.s
 
-CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.o: CMakeFiles/22s_pa01_misery.dir/flags.make
-CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.o: ../BruteForceAlgo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.o -c "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/BruteForceAlgo.cpp"
+CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.o: CMakeFiles/22s_pa01_misery.dir/flags.make
+CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.o: ../src/BruteForceAlgo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.o -c "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/BruteForceAlgo.cpp"
 
-CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/BruteForceAlgo.cpp" > CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.i
+CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/BruteForceAlgo.cpp" > CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.i
 
-CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/BruteForceAlgo.cpp" -o CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.s
+CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/BruteForceAlgo.cpp" -o CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.s
 
-CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.o: CMakeFiles/22s_pa01_misery.dir/flags.make
-CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.o: ../MostExpensiveFirstAlgo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.o -c "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/MostExpensiveFirstAlgo.cpp"
+CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.o: CMakeFiles/22s_pa01_misery.dir/flags.make
+CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.o: ../src/MostExpensiveFirstAlgo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.o -c "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/MostExpensiveFirstAlgo.cpp"
 
-CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/MostExpensiveFirstAlgo.cpp" > CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.i
+CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/MostExpensiveFirstAlgo.cpp" > CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.i
 
-CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/MostExpensiveFirstAlgo.cpp" -o CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.s
+CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/MostExpensiveFirstAlgo.cpp" -o CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.s
 
-CMakeFiles/22s_pa01_misery.dir/CustomAlgo.cpp.o: CMakeFiles/22s_pa01_misery.dir/flags.make
-CMakeFiles/22s_pa01_misery.dir/CustomAlgo.cpp.o: ../CustomAlgo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/22s_pa01_misery.dir/CustomAlgo.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/22s_pa01_misery.dir/CustomAlgo.cpp.o -c "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/CustomAlgo.cpp"
+CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.o: CMakeFiles/22s_pa01_misery.dir/flags.make
+CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.o: ../src/CustomAlgo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.o -c "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/CustomAlgo.cpp"
 
-CMakeFiles/22s_pa01_misery.dir/CustomAlgo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/22s_pa01_misery.dir/CustomAlgo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/CustomAlgo.cpp" > CMakeFiles/22s_pa01_misery.dir/CustomAlgo.cpp.i
+CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/CustomAlgo.cpp" > CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.i
 
-CMakeFiles/22s_pa01_misery.dir/CustomAlgo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/22s_pa01_misery.dir/CustomAlgo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/CustomAlgo.cpp" -o CMakeFiles/22s_pa01_misery.dir/CustomAlgo.cpp.s
+CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/CustomAlgo.cpp" -o CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.s
 
 # Object files for target 22s_pa01_misery
 22s_pa01_misery_OBJECTS = \
-"CMakeFiles/22s_pa01_misery.dir/main.cpp.o" \
-"CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.o" \
-"CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.o" \
-"CMakeFiles/22s_pa01_misery.dir/CustomAlgo.cpp.o"
+"CMakeFiles/22s_pa01_misery.dir/src/main.cpp.o" \
+"CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.o" \
+"CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.o" \
+"CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.o"
 
 # External object files for target 22s_pa01_misery
 22s_pa01_misery_EXTERNAL_OBJECTS =
 
-22s_pa01_misery: CMakeFiles/22s_pa01_misery.dir/main.cpp.o
-22s_pa01_misery: CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.o
-22s_pa01_misery: CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.o
-22s_pa01_misery: CMakeFiles/22s_pa01_misery.dir/CustomAlgo.cpp.o
+22s_pa01_misery: CMakeFiles/22s_pa01_misery.dir/src/main.cpp.o
+22s_pa01_misery: CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.o
+22s_pa01_misery: CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.o
+22s_pa01_misery: CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.o
 22s_pa01_misery: CMakeFiles/22s_pa01_misery.dir/build.make
 22s_pa01_misery: CMakeFiles/22s_pa01_misery.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable 22s_pa01_misery"

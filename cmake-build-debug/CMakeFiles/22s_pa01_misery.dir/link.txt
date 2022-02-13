@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/22s_pa01_misery.dir/main.cpp.o CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.o CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.o CMakeFiles/22s_pa01_misery.dir/CustomAlgo.cpp.o  -o 22s_pa01_misery 
+/usr/bin/c++  -g   CMakeFiles/22s_pa01_misery.dir/src/main.cpp.o CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.o CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.o CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.o  -o 22s_pa01_misery 

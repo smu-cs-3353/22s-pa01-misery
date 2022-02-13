@@ -41,6 +41,8 @@ void BruteForceAlgo::findOptimalPlacement(char** argv) {
     for (int i = 0; i < optimalIDs.size(); i++) {
         output << optimalIDs.at(i) << " " << optimalValues.at(i) << " " << optimalWidths.at(i) << " " << optimalHeights.at(i) << endl;
     }
+
+    output.close();
 }
 
 vector<vector<int>> BruteForceAlgo::findOptimalValue(vector<int> pictureIDs, vector<int> pictureValues, vector<int> pictureWidths, vector<int> pictureHeights, int wallLength) { //inspired by code found at: https://stackoverflow.com/questions/728972/finding-all-the-subsets-of-a-set

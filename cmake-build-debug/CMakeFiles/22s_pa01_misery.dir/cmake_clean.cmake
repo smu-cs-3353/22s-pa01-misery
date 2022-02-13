@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
   "22s_pa01_misery"
   "22s_pa01_misery.pdb"
-  "CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.o"
-  "CMakeFiles/22s_pa01_misery.dir/CustomAlgo.cpp.o"
-  "CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.o"
-  "CMakeFiles/22s_pa01_misery.dir/main.cpp.o"
+  "CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.o"
+  "CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.o"
+  "CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.o"
+  "CMakeFiles/22s_pa01_misery.dir/src/main.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.
