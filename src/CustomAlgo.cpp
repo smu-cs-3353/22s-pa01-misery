@@ -22,6 +22,12 @@ void CustomAlgo::findOptimalPlacement(char** argv) {
         pictureHeights.push_back(pictureHeight);
     }
 
+    sortByLeastSpace(pictureIDs, pictureValues, pictureWidths, pictureHeights, 0, pictureWidths.size() - 1);
+
+//    for (int i = 0; i < pictureWidths.size(); i++) {
+//        cout << pictureWidths.at(i) << endl;
+//    }
+
     vector<vector<int>> theSolution;
     findOptimalPlacement(pictureIDs, pictureValues, pictureWidths, pictureHeights, wallLength, 0, theSolution, false);
 
@@ -76,7 +82,6 @@ bool CustomAlgo::findOptimalPlacement(vector<int> pictureIDs, vector<int> pictur
         }
     }
 
-
     if (theSolution.size() > 0) {
         theSolution.pop_back();
     }
@@ -88,6 +93,43 @@ bool CustomAlgo::findOptimalPlacement(vector<int> pictureIDs, vector<int> pictur
         theSolution = backupSolution;
         return true;
     }
+}
+
+//The following sorting algorithm is a quick sort algorithm inspired by code found at: https://www.geeksforgeeks.org/quick-sort/
+void CustomAlgo::sortByLeastSpace(vector<int>& pictureIDs, vector<int>& pictureValues, vector<int>& pictureWidths, vector<int>& pictureHeights, int low, int high) {
+    if (low < high) {
+        int partitionIndex = partition(pictureIDs, pictureValues, pictureWidths, pictureHeights, low, high);
+
+        sortByLeastSpace(pictureIDs, pictureValues, pictureWidths, pictureHeights, low, partitionIndex - 1);
+        sortByLeastSpace(pictureIDs, pictureValues, pictureWidths, pictureHeights, partitionIndex + 1, high);
+    }
+}
+
+int CustomAlgo::partition(vector<int>& pictureIDs, vector<int>& pictureValues, vector<int>& pictureWidths, vector<int>& pictureHeights, int low, int high) {
+    int pivot = pictureWidths.at(high);
+    int i = low - 1;
+
+    for (int j = low; j <= high - 1; j++) {
+        if (pictureWidths.at(j) < pivot) {
+            i++;
+            swap(&pictureIDs.at(i), &pictureIDs.at(j));
+            swap(&pictureValues.at(i), &pictureValues.at(j));
+            swap(&pictureWidths.at(i), &pictureWidths.at(j));
+            swap(&pictureHeights.at(i), &pictureHeights.at(j));
+        }
+    }
+    swap(&pictureIDs.at(i + 1), &pictureIDs.at(high));
+    swap(&pictureValues.at(i + 1), &pictureValues.at(high));
+    swap(&pictureWidths.at(i + 1), &pictureWidths.at(high));
+    swap(&pictureHeights.at(i + 1), &pictureHeights.at(high));
+
+    return i + 1;
+}
+
+void CustomAlgo::swap(int* a, int* b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
 }
 
 //FIXME what I'm trying to do:
