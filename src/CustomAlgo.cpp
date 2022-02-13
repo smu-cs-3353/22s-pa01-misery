@@ -13,7 +13,7 @@ void CustomAlgo::findOptimalPlacement(char** argv) {
     vector<int> pictureIDs, pictureValues, pictureWidths, pictureHeights;
     int pictureID, pictureValue, pictureWidth, pictureHeight;
 
-    for (int i = 0; i < numArtPieces; i++) {
+    for (int i = 0; i < numArtPieces; i++) { //reads all the picture data and stores it in vectors
         input >> pictureID >> pictureValue >> pictureWidth >> pictureHeight;
 
         pictureIDs.push_back(pictureID);
@@ -22,14 +22,11 @@ void CustomAlgo::findOptimalPlacement(char** argv) {
         pictureHeights.push_back(pictureHeight);
     }
 
-    sortByLeastSpace(pictureIDs, pictureValues, pictureWidths, pictureHeights, 0, pictureWidths.size() - 1);
+    //the following line sorts the arrays by cost per unit of space (highest to lowest)
+    sortByCostPerUnit(pictureIDs, pictureValues, pictureWidths, pictureHeights, 0, pictureWidths.size() - 1);
 
-//    for (int i = 0; i < pictureWidths.size(); i++) {
-//        cout << pictureWidths.at(i) << endl;
-//    }
-
-    vector<vector<int>> theSolution;
-    findOptimalPlacement(pictureIDs, pictureValues, pictureWidths, pictureHeights, wallLength, 0, theSolution, false);
+    vector<vector<int>> theSolution, backupSolution;
+    findOptimalPlacement(pictureIDs, pictureValues, pictureWidths, pictureHeights, wallLength, 0, theSolution, backupSolution, wallLength, false);
 
     int totalPrice = 0;
 
@@ -39,7 +36,7 @@ void CustomAlgo::findOptimalPlacement(char** argv) {
     }
 
     string fileName = argv[1];
-    for (int i = 0; i < 4; i++) {
+    for (int i = 0; i < 4; i++) { //removes the .txt ending
         fileName.pop_back();
     }
     fileName += "-custom.txt";
@@ -48,7 +45,7 @@ void CustomAlgo::findOptimalPlacement(char** argv) {
 
     output << totalPrice << endl;
 
-    for (int i = 0; i < theSolution.size(); i++) {
+    for (int i = 0; i < theSolution.size(); i++) { //outputs the data of the pictures on the wall
         vector<int> temp = theSolution.at(i);
         for (int j = 0; j < temp.size(); j++) {
             output << temp.at(j) << " ";
@@ -60,57 +57,64 @@ void CustomAlgo::findOptimalPlacement(char** argv) {
 
 }
 
-bool CustomAlgo::findOptimalPlacement(vector<int> pictureIDs, vector<int> pictureValues, vector<int> pictureWidths, vector<int> pictureHeights, int wallLength, int start, vector<vector<int>>& theSolution, bool recursiveCall) {
-    vector<vector<int>> backupSolution;
+//recursive function that tries to find a solution that takes up all wall space. If no such solution exists, it finds
+//the solution that takes up the most wall space (which is stored in backupSolution)
+bool CustomAlgo::findOptimalPlacement(vector<int> pictureIDs, vector<int> pictureValues, vector<int> pictureWidths,
+                                      vector<int> pictureHeights, int wallLength, int start, vector<vector<int>>& theSolution,
+                                      vector<vector<int>>& backupSolution, int& backupWidth, bool recursiveCall) {
 
-    for (int i = start; i < pictureWidths.size(); i++) {
-        if (pictureWidths.at(i) <= wallLength) {
+    for (int i = start; i < pictureWidths.size(); i++) { //iterates through the picture dataset until it finds a picture that can fit on the wall
+        if (pictureWidths.at(i) <= wallLength) { //if the picture fits on the wall
 
             vector<int> temp = {pictureIDs.at(i), pictureValues.at(i), pictureWidths.at(i), pictureHeights.at(i)};
-            theSolution.push_back(temp);
-            backupSolution.push_back(temp); //FIXME backup is here
+            theSolution.push_back(temp); //add the picture data to theSolution
+
+            if (wallLength - pictureWidths.at(i) < backupWidth) { //if the current solution takes up more space than the backupSolution
+                backupSolution = theSolution;
+                backupWidth = wallLength - pictureWidths.at(i);
+            }
 
 
-            if (findOptimalPlacement(pictureIDs, pictureValues, pictureWidths, pictureHeights, wallLength - pictureWidths.at(i), i + 1, theSolution, true)) {
+            if (findOptimalPlacement(pictureIDs, pictureValues, pictureWidths, pictureHeights,
+                                     wallLength - pictureWidths.at(i), i + 1, theSolution, backupSolution,
+                                     backupWidth, true)) { //recursive call that returns true if the solution is found
                 return true;
             }
 
-            wallLength -= pictureWidths.at(i);
-
-        } else if (wallLength == 0) { //FIXME what threshold to use??
-            return true;
+        } else if (wallLength == 0) { //if a solution that takes up all wall space is found
+            return true; //return true
         }
     }
 
-    if (theSolution.size() > 0) {
+    if (!theSolution.empty()) { //if the optimal solution is not found, then remove the last picture from theSolution
         theSolution.pop_back();
     }
 
-    if (recursiveCall) {
+    if (recursiveCall) { //if it's a recursive call, return false
         return false;
-    } else {
-//        cout << "Using backup" << endl;
+    } else { //if it's not a recursive call (and thus called from findOptimalPlacement), then no combination results in all wall
+             //space being taken up. In this case, we use backupSolution (which contains the solution that takes up the most wall space)
         theSolution = backupSolution;
         return true;
     }
 }
 
 //The following sorting algorithm is a quick sort algorithm inspired by code found at: https://www.geeksforgeeks.org/quick-sort/
-void CustomAlgo::sortByLeastSpace(vector<int>& pictureIDs, vector<int>& pictureValues, vector<int>& pictureWidths, vector<int>& pictureHeights, int low, int high) {
+void CustomAlgo::sortByCostPerUnit(vector<int>& pictureIDs, vector<int>& pictureValues, vector<int>& pictureWidths, vector<int>& pictureHeights, int low, int high) {
     if (low < high) {
         int partitionIndex = partition(pictureIDs, pictureValues, pictureWidths, pictureHeights, low, high);
 
-        sortByLeastSpace(pictureIDs, pictureValues, pictureWidths, pictureHeights, low, partitionIndex - 1);
-        sortByLeastSpace(pictureIDs, pictureValues, pictureWidths, pictureHeights, partitionIndex + 1, high);
+        sortByCostPerUnit(pictureIDs, pictureValues, pictureWidths, pictureHeights, low, partitionIndex - 1);
+        sortByCostPerUnit(pictureIDs, pictureValues, pictureWidths, pictureHeights, partitionIndex + 1, high);
     }
 }
 
 int CustomAlgo::partition(vector<int>& pictureIDs, vector<int>& pictureValues, vector<int>& pictureWidths, vector<int>& pictureHeights, int low, int high) {
-    int pivot = pictureWidths.at(high);
+    double pivot = double(pictureValues.at(high)) / pictureWidths.at(high); //ratio of amount of money per unit of space
     int i = low - 1;
 
     for (int j = low; j <= high - 1; j++) {
-        if (pictureWidths.at(j) < pivot) {
+        if (double(pictureValues.at(j)) / pictureWidths.at(j) > pivot) { //ratio of amount of money per unit of space
             i++;
             swap(&pictureIDs.at(i), &pictureIDs.at(j));
             swap(&pictureValues.at(i), &pictureValues.at(j));
@@ -126,14 +130,8 @@ int CustomAlgo::partition(vector<int>& pictureIDs, vector<int>& pictureValues, v
     return i + 1;
 }
 
-void CustomAlgo::swap(int* a, int* b) {
+void CustomAlgo::swap(int* a, int* b) { //swaps the values passed to it
     int temp = *a;
     *a = *b;
     *b = temp;
 }
-
-//FIXME what I'm trying to do:
-//Loop through the vectors, adding pictures to the wall
-//once the remaining space on the wall is 0, return the pictures
-//if you can't get it to equal 0, backtrack to the previous picture
-
