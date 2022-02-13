@@ -5,7 +5,6 @@
 #include "CustomAlgo.h"
 
 void CustomAlgo::findOptimalPlacement(char** argv) {
-    cout << endl << "THIRD: " << endl;
     ifstream input(argv[1]);
 
     int wallLength, wallHeight, numArtPieces;
@@ -33,14 +32,22 @@ void CustomAlgo::findOptimalPlacement(char** argv) {
         totalPrice += temp.at(1);
     }
 
-    cout << totalPrice << endl;
+    string fileName = argv[1];
+    for (int i = 0; i < 4; i++) {
+        fileName.pop_back();
+    }
+    fileName += "-custom.txt";
+
+    ofstream output(fileName);
+
+    output << totalPrice << endl;
 
     for (int i = 0; i < theSolution.size(); i++) {
         vector<int> temp = theSolution.at(i);
         for (int j = 0; j < temp.size(); j++) {
-            cout << temp.at(j) << " ";
+            output << temp.at(j) << " ";
         }
-        cout << endl;
+        output << endl;
     }
 
 }
@@ -51,33 +58,22 @@ bool CustomAlgo::findOptimalPlacement(vector<int> pictureIDs, vector<int> pictur
     for (int i = start; i < pictureWidths.size(); i++) {
         if (pictureWidths.at(i) <= wallLength) {
 
-//            cout << "Wall Length: " << wallLength << endl;
-//            cout << "Adding " << pictureIDs.at(i) << " " << pictureValues.at(i) << " " << pictureWidths.at(i) << " " << pictureHeights.at(i) << endl;
             vector<int> temp = {pictureIDs.at(i), pictureValues.at(i), pictureWidths.at(i), pictureHeights.at(i)};
             theSolution.push_back(temp);
             backupSolution.push_back(temp); //FIXME backup is here
 
-//            cout << "Math: " << wallLength - pictureWidths.at(i) << endl;
 
             if (findOptimalPlacement(pictureIDs, pictureValues, pictureWidths, pictureHeights, wallLength - pictureWidths.at(i), i + 1, theSolution, true)) {
                 return true;
             }
 
-//            theSolution.insert(theSolution.end(), anotherTemp.begin(), anotherTemp.end());
             wallLength -= pictureWidths.at(i);
 
         } else if (wallLength == 0) { //FIXME what threshold to use??
-//            cout << "Bonjour" << endl;
             return true;
         }
     }
 
-//    cout << "Returning theSolution" << endl;
-//    cout << "Removing last element" << endl;
-
-//    for (int i = 0; i < theSolution.at(theSolution.size() - 1).size(); i++) {
-//        theSolution.at(theSolution.size() - 1).pop_back();
-//    }
 
     if (theSolution.size() > 0) {
         theSolution.pop_back();
@@ -86,7 +82,7 @@ bool CustomAlgo::findOptimalPlacement(vector<int> pictureIDs, vector<int> pictur
     if (recursiveCall) {
         return false;
     } else {
-        cout << "Using backup" << endl;
+//        cout << "Using backup" << endl;
         theSolution = backupSolution;
         return true;
     }
