@@ -13,8 +13,8 @@ using namespace std;
 
 
 int main(int argc, char** argv) {
-    BruteForceAlgo firstAlgorithm;
-    firstAlgorithm.findOptimalPlacement(argv);
+//    BruteForceAlgo firstAlgorithm;
+//    firstAlgorithm.findOptimalPlacement(argv);
 
     MostExpensiveFirstAlgo secondAlgorithm;
     secondAlgorithm.findOptimalPlacement(argv);
