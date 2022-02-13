@@ -5,10 +5,10 @@
 In this project, I needed to develop three algorithms that would determine the optimal subset of pictures to place on a wall such that, if all pictures were sold, it would maximize profit. All pictures are placed along the centerline of the wall, and the length and height of the wall, as well as the value, width, and height of each picture, were given to me. Thus, I created a brute force algorithm, which finds the best possible solution (but is incredibly slow at large dataset sizes), a most expensive picture first algorithm (which places the pictures on the wall starting with the most expensive first), and a custom algorithm that attempts to find a better solution than the most expensive picture first algorithm while being significantly faster than the brute force algorithm.
 
 ## Building and Executing
-To build the program from the terminal, simply navigate to the src folder and use the command: 
-g++ main.cpp BruteForceAlgo.cpp CustomAlgo.cpp MostExpensiveFirstAlgo.cpp -o output
-(Note that after the -o, you can name the executable whatever you want). To run the program, simply type the command:
-./output ../input/PictureInfo.txt
+To build the program from the terminal, simply navigate to the src folder and use the command:  
+**g++ main.cpp BruteForceAlgo.cpp CustomAlgo.cpp MostExpensiveFirstAlgo.cpp -o output**  
+(Note that after the -o, you can name the executable whatever you want). To run the program, simply type the command:  
+**./output ../input/PictureInfo.txt**  
 (Again, note that output should be replaced with the name of your executable). As seen above, the program requires a single command line argument containing the picture data formatted like the sample input shown below. If no command line argument is given, the program outputs an error message.
 
 ## Brute Force Algorithm
@@ -22,22 +22,22 @@ The Custom Algorithm's goal is to generate a faster solution than brute force wh
 
 ## Sample Input
 The input file should follow the following format:
-1) Line 1 should contain two integers separated by a space representing the length and height of the wall, respectively
-2) Line 2 contains a single integer 'n' that represents the total number of art pieces to follow
-3) Lines 3 to (3 + (n - 1)) should contain 4 integers each separated by spaces:
-  - The first integer is the picture ID
-  - The second integer is the value of the picture
-  - The third integer is the width of the picture
-  - The fourth integer is the heigth of the picture
+- Line 1 should contain two integers separated by a space representing the length and height of the wall, respectively
+- Line 2 contains a single integer 'n' that represents the total number of art pieces to follow
+- Lines 3 to (3 + (n - 1)) should contain 4 integers each separated by spaces:
+    - The first integer is the picture ID  
+    - The second integer is the value of the picture  
+    - The third integer is the width of the picture  
+    - The fourth integer is the heigth of the picture  
 
-An example input file is shown below:
-1024 768
-5
-49 632 417 858
-32 874 264 715
-20 150 545 795
-5 596 739 673
-80 279 991 146
+An example input file is shown below:  
+1024 768  
+5  
+49 632 417 858  
+32 874 264 715  
+20 150 545 795  
+5 596 739 673  
+80 279 991 146  
 
 ## Sample Output
 The output consists of three output files, one for each algorithm. The names of the files contain the name of the input with "-bruteforce.txt", "-highvalue.txt" and "-custom.txt" appended depending on the algorithm used. For example, if an input file called "PictureInfo.txt" is used as the input, then the output will be:
@@ -50,7 +50,7 @@ For each output file, the first line contains the cumulative value of all pictur
   - The second integer is the value of the picture
   - The third integer is the width of the picture
   - The fourth integer is the heigth of the picture
-A sample output for the brute force algorithm, based on the sample input from above, is shown below:
-1506
-49 632 417 858
-32 874 264 715
+A sample output for the brute force algorithm, based on the sample input from above, is shown below:  
+1506  
+49 632 417 858  
+32 874 264 715  
