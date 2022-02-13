@@ -13,9 +13,9 @@ using namespace std;
 
 class CustomAlgo {
 private:
-    bool findOptimalPlacement(vector<int>, vector<int>, vector<int>, vector<int>, int, int, vector<vector<int>>&, bool);
+    bool findOptimalPlacement(vector<int>, vector<int>, vector<int>, vector<int>, int, int, vector<vector<int>>&, vector<vector<int>>&, int&, bool);
 
-    void sortByLeastSpace(vector<int>&, vector<int>&, vector<int>&, vector<int>&, int, int);
+    void sortByCostPerUnit(vector<int>&, vector<int>&, vector<int>&, vector<int>&, int, int);
     void swap(int*, int*);
     int partition(vector<int>&, vector<int>&, vector<int>&, vector<int>&, int, int);
 
