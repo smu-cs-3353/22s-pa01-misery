@@ -22,3 +22,5 @@ int main(int argc, char** argv) {
     CustomAlgo thirdAlgorithm;
     thirdAlgorithm.findOptimalPlacement(argv);
 }
+
+//FIXME BruteForce should probably be able to run a dataset of around 25 in 5 minutes (or so)
