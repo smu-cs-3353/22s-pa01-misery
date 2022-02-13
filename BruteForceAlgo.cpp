@@ -24,14 +24,22 @@ void BruteForceAlgo::findOptimalPlacement(char** argv) {
 
     vector<vector<int>> theOptimalSolution = findOptimalValue(pictureIDs, pictureValues, pictureWidths, pictureHeights, wallLength);
 
-    cout << theOptimalSolution.at(0).at(0) << endl;
+    string fileName = argv[1];
+    for (int i = 0; i < 4; i++) { //gets rid of the .txt in fileName
+        fileName.pop_back();
+    }
+    fileName += "-bruteforce.txt";
+    ofstream output(fileName);
+
+    output << theOptimalSolution.at(0).at(0) << endl;
     vector<int> optimalIDs = theOptimalSolution.at(1);
     vector<int> optimalValues = theOptimalSolution.at(2);
     vector<int> optimalWidths = theOptimalSolution.at(3);
     vector<int> optimalHeights = theOptimalSolution.at(4);
 
+
     for (int i = 0; i < optimalIDs.size(); i++) {
-        cout << optimalIDs.at(i) << " " << optimalValues.at(i) << " " << optimalWidths.at(i) << " " << optimalHeights.at(i) << endl;
+        output << optimalIDs.at(i) << " " << optimalValues.at(i) << " " << optimalWidths.at(i) << " " << optimalHeights.at(i) << endl;
     }
 }
 
