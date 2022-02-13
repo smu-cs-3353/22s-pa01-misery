@@ -4,10 +4,14 @@
 CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.o: ../BruteForceAlgo.cpp
 CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.o: ../BruteForceAlgo.h
 
+CMakeFiles/22s_pa01_misery.dir/CustomAlgo.cpp.o: ../CustomAlgo.cpp
+CMakeFiles/22s_pa01_misery.dir/CustomAlgo.cpp.o: ../CustomAlgo.h
+
 CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.o: ../MostExpensiveFirstAlgo.cpp
 CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.o: ../MostExpensiveFirstAlgo.h
 
 CMakeFiles/22s_pa01_misery.dir/main.cpp.o: ../BruteForceAlgo.h
+CMakeFiles/22s_pa01_misery.dir/main.cpp.o: ../CustomAlgo.h
 CMakeFiles/22s_pa01_misery.dir/main.cpp.o: ../MostExpensiveFirstAlgo.h
 CMakeFiles/22s_pa01_misery.dir/main.cpp.o: ../main.cpp
 
