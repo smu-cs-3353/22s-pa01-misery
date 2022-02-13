@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/BruteForceAlgo.cpp
-BruteForceAlgo.h
-/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/BruteForceAlgo.h
+/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/CustomAlgo.cpp
+CustomAlgo.h
+/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/CustomAlgo.h
 
-/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/BruteForceAlgo.h
+/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/CustomAlgo.h
 vector
 -
-iostream
--
 fstream
+-
+iostream
 -
 
