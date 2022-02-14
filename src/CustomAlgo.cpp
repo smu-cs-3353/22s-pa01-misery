@@ -64,7 +64,6 @@ bool CustomAlgo::findOptimalPlacement(vector<int> pictureIDs, vector<int> pictur
 
     for (int i = start; i < pictureWidths.size(); i++) { //iterates through the picture dataset until it finds a picture that can fit on the wall
         if (pictureWidths.at(i) <= wallLength) { //if the picture fits on the wall
-            //cout << pictureIDs.at(i) << " ";
 
             vector<int> temp = {pictureIDs.at(i), pictureValues.at(i), pictureWidths.at(i), pictureHeights.at(i)};
             theSolution.push_back(temp); //add the picture data to theSolution
@@ -84,8 +83,12 @@ bool CustomAlgo::findOptimalPlacement(vector<int> pictureIDs, vector<int> pictur
             } else {
                 totalCost -= pictureValues.at(i); //removes the picture's value from totalCost (as the picture was removed from the wall by backtracking)
             }
-
-        } else if (wallLength == 0 && totalCost > backupCost) { //if a solution that takes up all wall space is found and its price is better than the backup's price
+            
+        } else if (wallLength == 0) { //if a solution that takes up all wall space is found
+            if (backupCost > totalCost) { //if, after finding a solution that fills the entire wall, the backupSolution has a better total value
+                totalCost = backupCost; //change the cost to the backupCost
+                theSolution = backupSolution; //change the solution to backupSolution
+            }
             return true; //return true
         }
     }
@@ -96,8 +99,8 @@ bool CustomAlgo::findOptimalPlacement(vector<int> pictureIDs, vector<int> pictur
 
     if (recursiveCall) { //if it's a recursive call, backtrack (which causes a picture to be removed from the wall)
         return false;
-    } else { //if it's not a recursive call (and thus called from findOptimalPlacement), then the ideal solution does not
-             //take up all wall space. In this case, we use backupSolution (which contains the solution with the highest value found)
+    } else { //if it's not a recursive call (and thus called from findOptimalPlacement) and a solution that takes up all
+        //wall space is not found. In this case, we use backupSolution (which contains the solution with the highest value found)
         theSolution = backupSolution;
         totalCost = backupCost;
         return true;
