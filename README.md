@@ -49,10 +49,10 @@ An example input file is shown below:
 80 279 991 146  
 
 ## Sample Output
-The output consists of three output files, one for each algorithm. The names of the files contain the name of the input with "-bruteforce.txt", "-highvalue.txt" and "-custom.txt" appended depending on the algorithm used. For example, if an input file called "PictureInfo.txt" is used as the input, then the output will be:
-PictureInfo-bruteforce.txt (for the brute force algorithm)
-PictureInfo-highvalue.txt (for the most expensive first algorithm)
-PictureInfo-custom.txt (for the custom algorithm)
+The output consists of three output files, one for each algorithm. The names of the files contain the name of the input with "-bruteforce.txt", "-highvalue.txt" and "-custom.txt" appended depending on the algorithm used. For example, if an input file called "PictureInfo.txt" is used as the input, then the output will be:  
+PictureInfo-bruteforce.txt (for the brute force algorithm)  
+PictureInfo-highvalue.txt (for the most expensive first algorithm)  
+PictureInfo-custom.txt (for the custom algorithm)  
 
 For each output file, the first line contains the cumulative value of all pictures on the wall. Subsequent lines represent each picture on the wall and contain 4 integers each separated by spaces:
   - The first integer is the picture ID
