@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/BruteForceAlgo.cpp" "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.o"
-  "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/MostExpensiveFirstAlgo.cpp" "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.o"
-  "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/main.cpp" "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/CMakeFiles/22s_pa01_misery.dir/main.cpp.o"
+  "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/BruteForceAlgo.cpp" "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.o"
+  "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/CustomAlgo.cpp" "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.o"
+  "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/MostExpensiveFirstAlgo.cpp" "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.o"
+  "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/main.cpp" "/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/CMakeFiles/22s_pa01_misery.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

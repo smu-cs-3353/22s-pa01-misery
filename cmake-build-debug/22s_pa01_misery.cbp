@@ -82,19 +82,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/BruteForceAlgo.cpp">
+		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/BruteForceAlgo.cpp">
 			<Option target="22s_pa01_misery"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/BruteForceAlgo.h">
+		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/BruteForceAlgo.h">
 			<Option target="22s_pa01_misery"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/MostExpensiveFirstAlgo.cpp">
+		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/CustomAlgo.cpp">
 			<Option target="22s_pa01_misery"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/MostExpensiveFirstAlgo.h">
+		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/CustomAlgo.h">
 			<Option target="22s_pa01_misery"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/main.cpp">
+		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/MostExpensiveFirstAlgo.cpp">
+			<Option target="22s_pa01_misery"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/MostExpensiveFirstAlgo.h">
+			<Option target="22s_pa01_misery"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/main.cpp">
 			<Option target="22s_pa01_misery"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/CMakeLists.txt">
