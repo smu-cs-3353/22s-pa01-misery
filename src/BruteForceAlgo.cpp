@@ -36,6 +36,10 @@ void BruteForceAlgo::findOptimalPlacement(char** argv) {
         fileName.pop_back();
     }
     fileName += "-bruteforce.txt";
+    fileName.at(3) = 'o';
+    fileName.at(4) = 'u';
+    fileName.insert(5, 1, 't');
+
     ofstream output(fileName);
 
     output << theOptimalSolution.at(0).at(0) << endl; //outputs the total value of the pictures on the wall

@@ -41,6 +41,9 @@ void CustomAlgo::findOptimalPlacement(char** argv) {
         fileName.pop_back();
     }
     fileName += "-custom.txt";
+    fileName.at(3) = 'o';
+    fileName.at(4) = 'u';
+    fileName.insert(5, 1, 't');
 
     ofstream output(fileName);
 

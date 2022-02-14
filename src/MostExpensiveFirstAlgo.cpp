@@ -40,6 +40,9 @@ void MostExpensiveFirstAlgo::findOptimalPlacement(char** argv) {
         fileName.pop_back();
     }
     fileName += "-highvalue.txt";
+    fileName.at(3) = 'o';
+    fileName.at(4) = 'u';
+    fileName.insert(5, 1, 't');
 
     ofstream output(fileName);
 
