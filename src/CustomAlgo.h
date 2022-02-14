@@ -13,7 +13,7 @@ using namespace std;
 
 class CustomAlgo {
 private:
-    bool findOptimalPlacement(vector<int>, vector<int>, vector<int>, vector<int>, int, int, vector<vector<int>>&, vector<vector<int>>&, int&, bool);
+    bool findOptimalPlacement(vector<int>, vector<int>, vector<int>, vector<int>, int, int, vector<vector<int>>&, vector<vector<int>>&, int&, int&, int&, bool);
 
     void sortByCostPerUnit(vector<int>&, vector<int>&, vector<int>&, vector<int>&, int, int);
     void swap(int*, int*);

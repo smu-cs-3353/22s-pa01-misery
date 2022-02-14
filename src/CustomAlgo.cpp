@@ -26,14 +26,10 @@ void CustomAlgo::findOptimalPlacement(char** argv) {
     sortByCostPerUnit(pictureIDs, pictureValues, pictureWidths, pictureHeights, 0, pictureWidths.size() - 1);
 
     vector<vector<int>> theSolution, backupSolution;
-    findOptimalPlacement(pictureIDs, pictureValues, pictureWidths, pictureHeights, wallLength, 0, theSolution, backupSolution, wallLength, false);
-
-    int totalPrice = 0;
-
-    for (int i = 0; i < theSolution.size(); i++) {
-        vector<int> temp = theSolution.at(i);
-        totalPrice += temp.at(1);
-    }
+    int totalCost = 0;
+    int backupCost = 0;
+    findOptimalPlacement(pictureIDs, pictureValues, pictureWidths, pictureHeights,
+                         wallLength, 0, theSolution, backupSolution, wallLength, totalCost, backupCost, false);
 
     string fileName = argv[1];
     for (int i = 0; i < 4; i++) { //removes the .txt ending
@@ -43,7 +39,7 @@ void CustomAlgo::findOptimalPlacement(char** argv) {
 
     ofstream output(fileName);
 
-    output << totalPrice << endl;
+    output << totalCost << endl;
 
     for (int i = 0; i < theSolution.size(); i++) { //outputs the data of the pictures on the wall
         vector<int> temp = theSolution.at(i);
@@ -57,44 +53,53 @@ void CustomAlgo::findOptimalPlacement(char** argv) {
 
 }
 
-//recursive function that tries to find a solution that takes up all wall space. If no such solution exists, it finds
-//the solution that takes up the most wall space (which is stored in backupSolution)
+//recursive function that tries to find a solution that takes up all wall space. While looking for such a solution, it
+//stores the combination of pictures with the highest value that it finds in backupSolution; if backupSolution has a
+//higher total value than a solution that takes up all wall space, it will look for another solution that takes up all
+//wall space. If no solution is found that has a higher value than backupSolution and takes up all wall space, then
+//backupSolution is used as the solution
 bool CustomAlgo::findOptimalPlacement(vector<int> pictureIDs, vector<int> pictureValues, vector<int> pictureWidths,
                                       vector<int> pictureHeights, int wallLength, int start, vector<vector<int>>& theSolution,
-                                      vector<vector<int>>& backupSolution, int& backupWidth, bool recursiveCall) {
+                                      vector<vector<int>>& backupSolution, int& backupSpaceRemaining, int& totalCost, int& backupCost, bool recursiveCall) {
 
     for (int i = start; i < pictureWidths.size(); i++) { //iterates through the picture dataset until it finds a picture that can fit on the wall
         if (pictureWidths.at(i) <= wallLength) { //if the picture fits on the wall
+            //cout << pictureIDs.at(i) << " ";
 
             vector<int> temp = {pictureIDs.at(i), pictureValues.at(i), pictureWidths.at(i), pictureHeights.at(i)};
             theSolution.push_back(temp); //add the picture data to theSolution
+            totalCost += pictureValues.at(i); //updates totalCost
 
-            if (wallLength - pictureWidths.at(i) < backupWidth) { //if the current solution takes up more space than the backupSolution
-                backupSolution = theSolution;
-                backupWidth = wallLength - pictureWidths.at(i);
+            //the following line is if the current solution takes up more space than the backupSolution and its price is better
+            if (wallLength - pictureWidths.at(i) < backupSpaceRemaining && totalCost > backupCost) {
+                backupSolution = theSolution; //update backupSolution
+                backupSpaceRemaining = wallLength - pictureWidths.at(i); //update backupSpaceRemaining
+                backupCost = totalCost; //update backupCost
             }
-
 
             if (findOptimalPlacement(pictureIDs, pictureValues, pictureWidths, pictureHeights,
                                      wallLength - pictureWidths.at(i), i + 1, theSolution, backupSolution,
-                                     backupWidth, true)) { //recursive call that returns true if the solution is found
+                                     backupSpaceRemaining, totalCost, backupCost, true)) { //recursive call that returns true if the best solution is found
                 return true;
+            } else {
+                totalCost -= pictureValues.at(i); //removes the picture's value from totalCost (as the picture was removed from the wall by backtracking)
             }
 
-        } else if (wallLength == 0) { //if a solution that takes up all wall space is found
+        } else if (wallLength == 0 && totalCost > backupCost) { //if a solution that takes up all wall space is found and its price is better than the backup's price
             return true; //return true
         }
     }
 
-    if (!theSolution.empty()) { //if the optimal solution is not found, then remove the last picture from theSolution
+    if (!theSolution.empty()) { //if the optimal solution is not found, then remove the last picture from the wall
         theSolution.pop_back();
     }
 
-    if (recursiveCall) { //if it's a recursive call, return false
+    if (recursiveCall) { //if it's a recursive call, backtrack (which causes a picture to be removed from the wall)
         return false;
-    } else { //if it's not a recursive call (and thus called from findOptimalPlacement), then no combination results in all wall
-             //space being taken up. In this case, we use backupSolution (which contains the solution that takes up the most wall space)
+    } else { //if it's not a recursive call (and thus called from findOptimalPlacement), then the ideal solution does not
+             //take up all wall space. In this case, we use backupSolution (which contains the solution with the highest value found)
         theSolution = backupSolution;
+        totalCost = backupCost;
         return true;
     }
 }
