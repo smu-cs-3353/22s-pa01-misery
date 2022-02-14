@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="22s_pa01_misery"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="22s_pa01_misery">
+				<Option output="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/22s_pa01_misery" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 22s_pa01_misery"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="22s_pa01_misery/fast">
+				<Option output="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug/22s_pa01_misery" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 22s_pa01_misery/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS\ 3353\ Projects/22s-pa01-misery/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/BruteForceAlgo.cpp">
+			<Option target="22s_pa01_misery"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/BruteForceAlgo.h">
+			<Option target="22s_pa01_misery"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/CustomAlgo.cpp">
+			<Option target="22s_pa01_misery"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/CustomAlgo.h">
+			<Option target="22s_pa01_misery"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/MostExpensiveFirstAlgo.cpp">
+			<Option target="22s_pa01_misery"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/MostExpensiveFirstAlgo.h">
+			<Option target="22s_pa01_misery"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/main.cpp">
+			<Option target="22s_pa01_misery"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
