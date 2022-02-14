@@ -17,8 +17,8 @@ int main(int argc, char** argv) {
         cout << "Error: Command line argument needed. Enter your command line argument after the executable." << endl;
         cout << "Example (output is the executable name): ./output ../input/PictureInfo.txt" << endl;
     } else {
-            BruteForceAlgo firstAlgorithm;
-            firstAlgorithm.findOptimalPlacement(argv);
+        BruteForceAlgo firstAlgorithm;
+        firstAlgorithm.findOptimalPlacement(argv);
 
         MostExpensiveFirstAlgo secondAlgorithm;
         secondAlgorithm.findOptimalPlacement(argv);
