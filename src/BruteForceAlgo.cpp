@@ -41,6 +41,8 @@ void BruteForceAlgo::findOptimalPlacement(char** argv) {
     for (int i = 0; i < optimalIDs.size(); i++) {
         output << optimalIDs.at(i) << " " << optimalValues.at(i) << " " << optimalWidths.at(i) << " " << optimalHeights.at(i) << endl;
     }
+
+    output.close();
 }
 
 vector<vector<int>> BruteForceAlgo::findOptimalValue(vector<int> pictureIDs, vector<int> pictureValues, vector<int> pictureWidths, vector<int> pictureHeights, int wallLength) { //inspired by code found at: https://stackoverflow.com/questions/728972/finding-all-the-subsets-of-a-set
@@ -66,7 +68,6 @@ vector<vector<int>> BruteForceAlgo::findOptimalValue(vector<int> pictureIDs, vec
         vector<vector<int>> heightTemp = heightSubsets;
 
         int currentPrice, currentLength;
-//        cout << "Size: " << temp.size() << endl;
 
         for (int j = 0; j < IDTemp.size(); j++) {
             IDTemp[j].push_back(pictureIDs[i]);
@@ -78,13 +79,11 @@ vector<vector<int>> BruteForceAlgo::findOptimalValue(vector<int> pictureIDs, vec
             currentPrice = 0;
             currentLength = 0;
             for (int k = 0; k < IDTemp[j].size(); k++) {
-//                cout << IDTemp[j][k] << " ";
                 currentPrice += valueTemp[j][k];
                 currentLength += widthTemp[j][k];
             }
-//            cout << endl;
 
-            if (currentPrice > bestPrice && currentLength < wallLength) {
+            if (currentPrice > bestPrice && currentLength <= wallLength) {
                 vector<vector<int>> theBest;
                 vector<int> theBestPrice;
                 theBestPrice.push_back(currentPrice);
