@@ -14,11 +14,20 @@ To build the program from the terminal, simply navigate to the src folder and us
 ## Brute Force Algorithm
 The Brute Force Algorithm's goal is to find the combination of pictures that results in the highest total value. To do so, it generates all possible combinations of the pictures. It compares each combination's total price and total length to the current best price and the wall length. If a combination's price is the highest found so far, and the combination of pictures fits on the wall, then the algorithm stores that combination. After all combinations have been generated and checked, the algorithm returns the combination with the best possible price (given that it also fits on the wall). The results are outputted to a file.
 
+The Brute Force Algorithm took the longest to run by far; however, this was expected, as the number of subsets the algorithm has to generate increases exponentially as the number of pictures increases. The largest data set I could get to run with the Brute Force Algorithm was 23 pictures. The following graph compares the time it took the algorithm to run to the number of pictures in the data set:
+![](images/Algo%20Project%201%20Graph%201.png)
+
 ## Most Expensive First Algorithm
 The Most Expensive First Algorithm's goal is to generate a much faster solution than brute force by simply placing the pictures on the wall from most expensive to least expensive, skipping any pictures that do not fit on the wall. To do this, I used a Quick Sort algorithm to sort the picture data from highest picture value to lowest picture value. Then I iterated over the sorted data, adding each picture to the wall if it fit in the remaining wall space. The results are outputted to a file. 
 
+The Most Expensive First Algorithm was extremely quick, even on large data sets; this was expected, as quick sort is extremely efficient and the algorithm only iterates through a single for loop once. The following graph compares the time it took the algorithm to run to the number of pictures in the data set:
+![](images/Algo%20Project%201%20Graph%202.png)
+
 ## Custom Algorithm
 The Custom Algorithm's goal is to generate a faster solution than brute force while finding a solution with a higher value than most expensive first. To do this, I used a Quick Sort algorithm to sort the pictures by the ratio of the cost of each picture to the amount of space it takes up (with the highest ratio being first). Thus, a picture that costs $20 with a width of 5 units would be placed before a picture that costs $20 with a width of 10 units. After sorting the picture data, I used a recursive function (called findOptimalPlacement) to iterate through every picture, placing each picture on the wall if it fit, only ending if a solution that takes up all wall space is found. If such a solution isn't initally found, then the function backtracks and removes the last picture placed on the wall. It then tries to place subsequent pictures on the wall until all wall space is taken up. This process is repeated until a solution that takes up all wall space is found. In the case that no such solution exists, the program stores the solution that takes up the most wall space and uses that instead.
+
+My custom algorithm was also extremely quick, although it was consistently slower than the most expensive first algorithm. Nevertheless, my custom algorithm's speed allowed it to run extremely quickly on large data sets that would take brute force a long time. The following graph compares the time it took the algorithm to run to the number of pictures in the data set:
+![](images/Algo%20Project%201%20Graph%203.png)
 
 ## Sample Input
 The input file should follow the following format:
