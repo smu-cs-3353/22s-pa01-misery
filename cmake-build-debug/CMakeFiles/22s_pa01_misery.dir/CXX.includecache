@@ -6,43 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/BruteForceAlgo.h
-vector
--
-iostream
--
-fstream
--
-
-/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/CustomAlgo.h
-vector
--
-fstream
--
-iostream
--
-
-/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/MostExpensiveFirstAlgo.h
-vector
--
-fstream
--
-iostream
--
-
-/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/main.cpp
-cmath
--
-vector
--
-iostream
--
-fstream
--
+/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/BruteForceAlgo.cpp
 BruteForceAlgo.h
 /mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/BruteForceAlgo.h
-MostExpensiveFirstAlgo.h
-/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/MostExpensiveFirstAlgo.h
-CustomAlgo.h
-/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/CustomAlgo.h
+
+/mnt/c/Users/mikec_g1kgiu8/OneDrive/Desktop/CS 3353 Projects/22s-pa01-misery/src/BruteForceAlgo.h
+vector
+-
+iostream
+-
+fstream
+-
 
