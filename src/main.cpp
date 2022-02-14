@@ -28,10 +28,12 @@ int main(int argc, char** argv) {
         std::chrono::duration<double> time_in_seconds = end - start;
         cout << fixed << "BruteForceAlgo Duration: " << time_in_seconds.count() << endl;
 
+
         start = std::chrono::high_resolution_clock::now();
         MostExpensiveFirstAlgo secondAlgorithm;
         secondAlgorithm.findOptimalPlacement(argv);
         end = std::chrono::high_resolution_clock::now();
+
 
         /*std::chrono::duration<double>*/ time_in_seconds = end - start;
         cout << fixed << "MostExpensiveFirstAlgo Duration: " << time_in_seconds.count() << endl;
