@@ -62,10 +62,9 @@ void CustomAlgo::findOptimalPlacement(char** argv) {
 }
 
 //recursive function that tries to find a solution that takes up all wall space. While looking for such a solution, it
-//stores the combination of pictures with the highest value that it finds in backupSolution; if backupSolution has a
-//higher total value than a solution that takes up all wall space, it will look for another solution that takes up all
-//wall space. If no solution is found that has a higher value than backupSolution and takes up all wall space, then
-//backupSolution is used as the solution
+//stores the combination of pictures with the highest value that it finds in backupSolution; if no solution is found that
+//takes up all the wall space, then backupSolution is used as the solution. If a solution that takes up all of the wall space
+//is found, then the total values of that solution and backupSolution are compared; whichever is higher is used as the solution
 bool CustomAlgo::findOptimalPlacement(vector<int> pictureIDs, vector<int> pictureValues, vector<int> pictureWidths,
                                       vector<int> pictureHeights, int wallLength, int start, vector<vector<int>>& theSolution,
                                       vector<vector<int>>& backupSolution, int& backupSpaceRemaining, int& totalCost, int& backupCost, bool recursiveCall) {
