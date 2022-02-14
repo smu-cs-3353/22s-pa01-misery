@@ -13,14 +13,19 @@ using namespace std;
 
 
 int main(int argc, char** argv) {
-//    BruteForceAlgo firstAlgorithm;
-//    firstAlgorithm.findOptimalPlacement(argv);
+    if (argc == 1) {
+        cout << "Error: Command line argument needed. Enter your command line argument after the executable." << endl;
+        cout << "Example (output is the executable name): ./output ../input/PictureInfo.txt" << endl;
+    } else {
+            BruteForceAlgo firstAlgorithm;
+            firstAlgorithm.findOptimalPlacement(argv);
 
-    MostExpensiveFirstAlgo secondAlgorithm;
-    secondAlgorithm.findOptimalPlacement(argv);
+        MostExpensiveFirstAlgo secondAlgorithm;
+        secondAlgorithm.findOptimalPlacement(argv);
 
-    CustomAlgo thirdAlgorithm;
-    thirdAlgorithm.findOptimalPlacement(argv);
+        CustomAlgo thirdAlgorithm;
+        thirdAlgorithm.findOptimalPlacement(argv);
+    }
+
+    return 0;
 }
-
-//FIXME BruteForce should probably be able to run a dataset of around 25 in 5 minutes (or so)
