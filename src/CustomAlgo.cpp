@@ -7,8 +7,13 @@
 void CustomAlgo::findOptimalPlacement(char** argv) {
     ifstream input(argv[1]);
 
+    if (!input.is_open()) {
+        cout << "Could not open " << argv[1] << endl;
+        return;
+    }
+
     int wallLength, wallHeight, numArtPieces;
-    input >> wallLength >> wallHeight >> numArtPieces;
+    input >> wallLength >> wallHeight >> numArtPieces; //wall data + number of art pieces
 
     vector<int> pictureIDs, pictureValues, pictureWidths, pictureHeights;
     int pictureID, pictureValue, pictureWidth, pictureHeight;

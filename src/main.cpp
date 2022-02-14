@@ -18,7 +18,12 @@ int main(int argc, char** argv) {
         cout << "Error: Command line argument needed. Enter your command line argument after the executable." << endl;
         cout << "Example (output is the executable name): ./output ../input/PictureInfo.txt" << endl;
     } else {
+
         std::chrono::time_point<std::chrono::high_resolution_clock> start, end;
+
+        BruteForceAlgo firstAlgorithm;
+        firstAlgorithm.findOptimalPlacement(argv);
+
 
         start = std::chrono::high_resolution_clock::now();
         BruteForceAlgo firstAlgorithm;
