@@ -123,86 +123,113 @@ depend:
 	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/build
 .PHONY : 22s_pa01_misery/fast
 
-BruteForceAlgo.o: BruteForceAlgo.cpp.o
+src/BruteForceAlgo.o: src/BruteForceAlgo.cpp.o
 
-.PHONY : BruteForceAlgo.o
-
-# target to build an object file
-BruteForceAlgo.cpp.o:
-	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.o
-.PHONY : BruteForceAlgo.cpp.o
-
-BruteForceAlgo.i: BruteForceAlgo.cpp.i
-
-.PHONY : BruteForceAlgo.i
-
-# target to preprocess a source file
-BruteForceAlgo.cpp.i:
-	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.i
-.PHONY : BruteForceAlgo.cpp.i
-
-BruteForceAlgo.s: BruteForceAlgo.cpp.s
-
-.PHONY : BruteForceAlgo.s
-
-# target to generate assembly for a file
-BruteForceAlgo.cpp.s:
-	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/BruteForceAlgo.cpp.s
-.PHONY : BruteForceAlgo.cpp.s
-
-MostExpensiveFirstAlgo.o: MostExpensiveFirstAlgo.cpp.o
-
-.PHONY : MostExpensiveFirstAlgo.o
+.PHONY : src/BruteForceAlgo.o
 
 # target to build an object file
-MostExpensiveFirstAlgo.cpp.o:
-	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.o
-.PHONY : MostExpensiveFirstAlgo.cpp.o
+src/BruteForceAlgo.cpp.o:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.o
+.PHONY : src/BruteForceAlgo.cpp.o
 
-MostExpensiveFirstAlgo.i: MostExpensiveFirstAlgo.cpp.i
+src/BruteForceAlgo.i: src/BruteForceAlgo.cpp.i
 
-.PHONY : MostExpensiveFirstAlgo.i
+.PHONY : src/BruteForceAlgo.i
 
 # target to preprocess a source file
-MostExpensiveFirstAlgo.cpp.i:
-	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.i
-.PHONY : MostExpensiveFirstAlgo.cpp.i
+src/BruteForceAlgo.cpp.i:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.i
+.PHONY : src/BruteForceAlgo.cpp.i
 
-MostExpensiveFirstAlgo.s: MostExpensiveFirstAlgo.cpp.s
+src/BruteForceAlgo.s: src/BruteForceAlgo.cpp.s
 
-.PHONY : MostExpensiveFirstAlgo.s
+.PHONY : src/BruteForceAlgo.s
 
 # target to generate assembly for a file
-MostExpensiveFirstAlgo.cpp.s:
-	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/MostExpensiveFirstAlgo.cpp.s
-.PHONY : MostExpensiveFirstAlgo.cpp.s
+src/BruteForceAlgo.cpp.s:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/src/BruteForceAlgo.cpp.s
+.PHONY : src/BruteForceAlgo.cpp.s
 
-main.o: main.cpp.o
+src/CustomAlgo.o: src/CustomAlgo.cpp.o
 
-.PHONY : main.o
+.PHONY : src/CustomAlgo.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/CustomAlgo.cpp.o:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.o
+.PHONY : src/CustomAlgo.cpp.o
 
-main.i: main.cpp.i
+src/CustomAlgo.i: src/CustomAlgo.cpp.i
 
-.PHONY : main.i
+.PHONY : src/CustomAlgo.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/CustomAlgo.cpp.i:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.i
+.PHONY : src/CustomAlgo.cpp.i
 
-main.s: main.cpp.s
+src/CustomAlgo.s: src/CustomAlgo.cpp.s
 
-.PHONY : main.s
+.PHONY : src/CustomAlgo.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/CustomAlgo.cpp.s:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/src/CustomAlgo.cpp.s
+.PHONY : src/CustomAlgo.cpp.s
+
+src/MostExpensiveFirstAlgo.o: src/MostExpensiveFirstAlgo.cpp.o
+
+.PHONY : src/MostExpensiveFirstAlgo.o
+
+# target to build an object file
+src/MostExpensiveFirstAlgo.cpp.o:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.o
+.PHONY : src/MostExpensiveFirstAlgo.cpp.o
+
+src/MostExpensiveFirstAlgo.i: src/MostExpensiveFirstAlgo.cpp.i
+
+.PHONY : src/MostExpensiveFirstAlgo.i
+
+# target to preprocess a source file
+src/MostExpensiveFirstAlgo.cpp.i:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.i
+.PHONY : src/MostExpensiveFirstAlgo.cpp.i
+
+src/MostExpensiveFirstAlgo.s: src/MostExpensiveFirstAlgo.cpp.s
+
+.PHONY : src/MostExpensiveFirstAlgo.s
+
+# target to generate assembly for a file
+src/MostExpensiveFirstAlgo.cpp.s:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/src/MostExpensiveFirstAlgo.cpp.s
+.PHONY : src/MostExpensiveFirstAlgo.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/22s_pa01_misery.dir/build.make CMakeFiles/22s_pa01_misery.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -213,15 +240,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... 22s_pa01_misery"
-	@echo "... BruteForceAlgo.o"
-	@echo "... BruteForceAlgo.i"
-	@echo "... BruteForceAlgo.s"
-	@echo "... MostExpensiveFirstAlgo.o"
-	@echo "... MostExpensiveFirstAlgo.i"
-	@echo "... MostExpensiveFirstAlgo.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/BruteForceAlgo.o"
+	@echo "... src/BruteForceAlgo.i"
+	@echo "... src/BruteForceAlgo.s"
+	@echo "... src/CustomAlgo.o"
+	@echo "... src/CustomAlgo.i"
+	@echo "... src/CustomAlgo.s"
+	@echo "... src/MostExpensiveFirstAlgo.o"
+	@echo "... src/MostExpensiveFirstAlgo.i"
+	@echo "... src/MostExpensiveFirstAlgo.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

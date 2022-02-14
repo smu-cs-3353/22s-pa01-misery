@@ -44,6 +44,8 @@ void MostExpensiveFirstAlgo::findOptimalPlacement(char** argv) {
         }
         output << endl;
     }
+
+    output.close();
 }
 
 vector<vector<int>> MostExpensiveFirstAlgo::findOptimalPlacement(vector<int> pictureIDs, vector<int> pictureValues, vector<int> pictureWidths, vector<int> pictureHeights, int wallLength) {
